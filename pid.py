@@ -7,10 +7,10 @@ import csv
 def get_auth_token():
     url = "https://cloudsso.cisco.com/as/token.oauth2"
 
-    payload='grant_type=client_credentials&client_id=846h3mpwuc5d5u8e9eq7aw8x&client_secret=Q8kgptZVCtPmF3EdHnYZsWMQ'
+    payload='grant_type=client_credentials&client_id=xxxx&client_secret=yyyy'
     headers = {
                 'Content-Type': 'application/x-www-form-urlencoded',
-                'Cookie': 'PF=jSqi5tVYKKk1yefI6aRrcH'
+                'Cookie': 'PF=zzzz'
                 }
 
     response = requests.request("POST", url, headers=headers, data=payload)
